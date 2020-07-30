@@ -1,0 +1,45 @@
+.header{
+    width: 100%;
+    height: 10%;
+    background: #f7f7f7;
+    position: fixed;
+    border: 1px solid #4f72ef;
+    border-left: 0px;
+    border-right: 0px;
+}
+.footer{
+    width: 100%;
+    height: 10%;
+    background: grey;
+    position: fixed;
+    border: 3px solid #c3a8a8;
+    bottom:0px;
+}
+.menu, .sign-out
+{
+    height: 100%;
+    width: 22%;
+    font-size: 9.2vw;
+    border-radius: 30px;
+}
+.menu
+{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.sign-out{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    float:right;
+}
+.title{
+    text-align: center;
+    margin-left:2%;
+}
+.notification{
+    margin-left: 2%;
+    background: transparent;
+    color: #007bff;
+    border-color: #007bff;
+    border-radius: 25px;
+}
