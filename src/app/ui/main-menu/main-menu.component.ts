@@ -10,7 +10,7 @@ declare var Android: any;
 })
 export class MainMenuComponent {
 
-    battery:string = "Battery ";
+    battery:string = "";
     wifi:string = "Wifi Network";
     signal:string = "Mobile Network";
     messages:string = "Text Messages";
@@ -20,14 +20,12 @@ export class MainMenuComponent {
     mirror:string = "Screen Sharing";
     settings:string = "App Settings";
     public modalRef: BsModalRef; // {1}
-    constructor(private modalService: BsModalService) {} // {2}
+    constructor(private modalService: BsModalService) {
+      window['service'] = this;
+    }
 
     public batteryStatus(){
-      Android.showBattery();
+      this.battery = Android.showBattery();
     }
-    public setBattery(status){
-      this.battery = status;
-    } 
-
 
 }
